@@ -1,6 +1,7 @@
 ## ALWAYS ADD RESET.CSS
 
 Never forget that first stylesheet in all your pages must be [reset.css](https://github.com/adamstac/meyer-reset/blob/master/stylesheets/compiled/meyer-reset-compressed.css)
+This make more simple check crossbrowser.
 
 ## NEVER USE INLINE STILE!
 
@@ -65,6 +66,23 @@ must be rewritten in css:
 .theme-default .slider img{position:absolute;top:0;left:0;display:none;width:568px;height:268px;}
 .theme-default .slider a{border:0;display:block;}
 ```
+
+## Colors
+
+When denoting color using hexadecimal notation, use all capital letters.
+Both three-digit and six-digit hexadecimal notation are acceptable;
+if it’s possible to specify the desired color using three-digit hexadecimal notation, 
+do so as you’ll save the end-user a few bytes of download time.
+
+```css
+color: #FFF;    /* Okay */
+color: #FE9848; /* Okay */
+color: #fff;    /* Not okay */
+```
+
+## Form fields
+
+Always style form fields
 
 ## USE STYLUS
 
