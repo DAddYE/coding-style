@@ -1,4 +1,4 @@
-### NEVER USE INLINE STILE!
+## NEVER USE INLINE STILE!
 
 An haml template like:
 
@@ -12,7 +12,7 @@ must be converted in css:
 #content { background:url(/images/middle.png) no-repeat top center #fff;padding:5px } 
 ```
 
-### NEVER USE ID UNLESS IT IS NEEDED BY JS
+## NEVER USE ID UNLESS IT IS NEEDED BY JS
 
 ```haml
 #content
@@ -26,7 +26,7 @@ must be:
   My Content
 ```
 
-### NAMESPACE WITH CSS CLASSES
+## NAMESPACE WITH CSS CLASSES
 
 ```haml
 .login-fields=login_here
@@ -41,7 +41,7 @@ must be:
   .warnings=warnings_here
 ```
 
-### NEVER ABUSE OF CONCATENATED CLASSES
+## NEVER ABUSE OF CONCATENATED CLASSES
 
 ```haml
 .content.right.aright.padding-top.padding-bottom
@@ -53,7 +53,7 @@ must be rewritten in css:
 .content{float:right;text-align:right;padding:5px 0px 5px 0px}
 ```
 
-### COMPRESS ALWAYS CSS
+## COMPRESS ALWAYS CSS
 
 ```css
 .theme-default .slider-wrapper{background:url(/images/slider.png) no-repeat;width:722px;height:337px;padding-top:18px;position:relative;margin:0 auto;}
@@ -62,6 +62,6 @@ must be rewritten in css:
 .theme-default .slider a{border:0;display:block;}
 ```
 
-### USE STYLUS
+## USE STYLUS
 
 We recommend to use [stylus](http://learnboost.github.com/stylus/)
