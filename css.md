@@ -1,3 +1,7 @@
+## ALWAYS ADD RESET.CSS
+
+Never forget that first stylesheet in all your pages must be [reset.css](https://github.com/adamstac/meyer-reset/blob/master/stylesheets/compiled/meyer-reset-compressed.css)
+
 ## NEVER USE INLINE STILE!
 
 An haml template like:
