@@ -14,10 +14,10 @@ An haml template like:
 must be converted in css:
 
 ```css
-#content { background:url(/images/middle.png) no-repeat top center #fff;padding:5px } 
+#content { background:url(/images/middle.png) no-repeat top center #fff;padding:5px }
 ```
 
-## NEVER USE ID UNLESS IT IS NEEDED BY JS
+## NEVER USE "ID" UNLESS IT IS NEEDED BY JS
 
 ```haml
 #content
@@ -33,12 +33,16 @@ must be:
 
 ## NAMESPACE WITH CSS CLASSES
 
+Each `haml`/`erb` template must **start with** a css class that scope content.
+
+This is bad:
+
 ```haml
 .login-fields=login_here
 .login-warnings=warnings_here
 ```
 
-must be:
+a bit better:
 
 ```haml
 .login
